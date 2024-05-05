@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Made by Nata",
+  "version": "1.2",
+  "description": "Made by Nata",
+  "icons" : {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab","storage", "tabs", "webNavigation", "webRequest"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery-3.6.4.min.js", "fitur/content.js", "fitur/sub4unlock.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

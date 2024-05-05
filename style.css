@@ -1,0 +1,58 @@
+body {
+  width: 400px;
+  height: auto;
+  padding: 12px;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  color: whitesmoke;
+}
+
+/* Style untuk judul */
+h1 {
+  background-image: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Style untuk teks */
+p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: floralwhite;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li:before {
+  content: "\2713";
+  margin-right: 5px;
+}
+
+li {
+  font-size: 15px;
+  color: bisque;
+}
+
+li a {
+  text-decoration: none;
+  color: bisque;
+}
+
+.wrapper-center {
+  display: flex;
+  justify-content: center;
+}

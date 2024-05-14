@@ -12,13 +12,6 @@ function removeAds() {
     $(".widget_senction:not(:has(*))").remove();
     $("main br, .container.footer").remove();
   }
-
-  // run pada semua domain
-  $('*[id*="adblock"], div[id*="float"]').remove();
-  $('*[id*="teaser"], *[id*="teaser3"]').remove();
-  $('*[class*="kln"], .postbody br').remove();
-  $("#fixedban, #overplay").remove();
-  $(".mainholder #content .row").remove();
 }
 // tambahkan css oploverz dan samehadaku
 if (window.location.hostname === "samehadaku.email") {

@@ -1,9 +1,9 @@
 function removeAds() {
   if (window.location.hostname === "samehadaku.email") {
     $("#floatcenter, #floatbottom").remove();
-    // hapus setiap anchor didalam tag main, namun jangan hapus jika anchor child parent dari class "widget_senction" dan class "download-eps"
+    // jika anchor bukan url dari hostnamenya, maka hapus
     $("main a").each(function () {
-      if (!$(this).parents(".widget_senction, .download-eps").length) {
+      if (this.hostname !== window.location.hostname) {
         $(this).remove();
       }
     });
